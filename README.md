@@ -8,7 +8,7 @@ Running this analysis requires the following:
 
 - Timestep vertical lines (for stack plot) saved to `vlinesCSV/`
 
-## Generating individual plots
+## 1. Generating individual plots
 
 - Run `SaveXO.py` with PvPython
 
@@ -20,7 +20,7 @@ Running this analysis requires the following:
 
     - Plots saved to `xplots/`
 
-## Generating stack plot in time
+## 2. Generating stack plot in time
 
 The stack plot requires files for every timestep to be present in the `xolinesCSV/` subdirectory.
 
@@ -28,4 +28,17 @@ The stack plot requires files for every timestep to be present in the `xolinesCS
 
     - Plot is saved as `AllPlot.png`
 
-## Computing integrals
+## 3. Computing integrals
+
+The stack plot requires files for every timestep to be present in the `xlinesCSV/` subdirectory.
+
+- Run `Integration.py` with Python3
+
+    - By toggling `lines = True/False`, plot is saved alternately as either
+
+        - `IntegralsLinePlot.png`
+
+        - `IntegralsScatterPlot.png`
+    
+    - Integrated values are saved as `Integrals.csv`
+
